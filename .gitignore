@@ -1,0 +1,14 @@
+# Clojure CLI dependency-resolution cache
+.cpcache/
+
+# Clojure language server and lint caches
+.lsp/.cache/
+.clj-kondo/.cache/
+
+# Calva's generated REPL port and local REPL window
+.nrepl-port
+.calva/repl.calva-repl
+
+# Java build output, should any be generated later
+target/
+*.class

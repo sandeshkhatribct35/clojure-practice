@@ -1,0 +1,20 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "calva.autoStart": true,
+  "calva.replConnectSequences": [
+    {
+      "name": "Clojure CLI - clojure-practice",
+      "projectType": "deps.edn",
+      "projectRootPath": [],
+      "autoSelectForJackIn": true,
+      "autoSelectForConnect": true,
+      "nReplPortFile": [
+        ".nrepl-port"
+      ],
+      "selectedPortBehaviour": "connect",
+      "menuSelections": {
+        "cljAliases": []
+      }
+    }
+  ]
+}
