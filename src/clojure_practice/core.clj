@@ -50,3 +50,18 @@
    ( - (calculate-fee monthly-fee number-of-months registration-fee)
     (calculate-discount Discount-percent (calculate-fee monthly-fee number-of-months registration-fee))))
 (final-fee 3000 8 500 10)
+;; USing local bindings
+;; Given:
+;; - Monthly fee = 3000
+;; - Months = 8
+;; - Registration fee = 500
+;; - Discount = 10%
+;; Create a function called final-fee that uses let.
+(let [ monthly-fee 3000
+      months 8
+      registration-fee 500
+      Discount-percent 10
+      total-fee(* monthly-fee months)
+      Discount (/ (* Discount-percent total-fee) 100)
+      final-fee(- (+ total-fee registration-fee) Discount) ]
+ final-fee) 
