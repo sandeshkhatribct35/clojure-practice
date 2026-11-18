@@ -1,12 +1,19 @@
 # Daily Progress
 
-Use this template after each practice session. Keep entries factual and avoid claiming completed work before it has been practiced or verified.
+
 
 ## YYYY-MM-DD
+2026-11-17 to 2026-11-18
 
 ### Completed
 
--
+-Basic Clojure arithmetic expressions
+- Printing values with `println`
+- Calculating totals with variables
+- Defining functions with `defn`
+- Reusing functions for discount calculations
+- Creating local bindings with `let`
+- Using `let` inside `defn`
 
 ### Concepts Learned
 
@@ -18,9 +25,11 @@ Use this template after each practice session. Keep entries factual and avoid cl
 
 ### Challenges Faced
 
--
+looping of functions
+
 
 ### Next Tasks
+if and else conditioning
 
 -
 
