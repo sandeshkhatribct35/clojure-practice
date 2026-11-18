@@ -10,7 +10,6 @@
 .calva/repl.calva-repl
 
 # Java build output
-.target/
 target/
 *.class
 *.jar
