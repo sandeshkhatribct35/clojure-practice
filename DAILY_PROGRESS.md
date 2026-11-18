@@ -6,22 +6,22 @@ Use this template after each practice session. Keep entries factual and avoid cl
 
 ### Completed
 
-- 
+-
 
 ### Concepts Learned
 
-- 
+-
 
 ### Exercises / Files Updated
 
-- 
+-
 
 ### Challenges Faced
 
-- 
+-
 
 ### Next Tasks
 
-- 
+-
 
 ---
