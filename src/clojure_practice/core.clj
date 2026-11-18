@@ -65,3 +65,34 @@
       Discount (/ (* Discount-percent total-fee) 100)
       final-fee(- (+ total-fee registration-fee) Discount) ]
  final-fee) 
+;; let inside defn
+;; Create this function yourself:
+
+;; Function name: calculate-final-fee
+
+;; Parameters:
+;; - monthly-fee
+;; - months
+;; - registration-fee
+;; - discount-percent
+;; Business rule:
+;; - Discount applies only to tuition.
+;; - Registration fee is mandatory and receives no discount.
+;; Use let to calculate:
+;; 1. Original tuition.
+;; 2. Discount amount.
+;; 3. Discounted tuition.
+;; 4. Final payable amount.
+(defn calculate-final-fee [monthly-fee months registration-fee discount-percent]
+  (let [
+        original-tution(* monthly-fee months)
+        discount-amount(/ (* discount-percent original-tution) 100)
+        discounted-tution(- original-tution discount-amount)
+        final-payable(+ discounted-tution registration-fee)
+  ]
+    final-payable
+    
+   )
+  
+)
+(calculate-final-fee 3000 8 500 10)
