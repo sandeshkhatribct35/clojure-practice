@@ -32,10 +32,21 @@
 ;; Print the result.
 ;; 
 
-(def monthly-fee 3000)
-(def number-of-months 8)
-(def registration-fee 500)
+;; (def monthly-fee 3000)
+;; (def number-of-months 8)
+;; (def registration-fee 500)
+;; (def Discount-percent 10)
 
-(def total-fee (+ (*  monthly-fee number-of-months) registration-fee))
-(println "Total fee :"  total-fee)
+;; (def total-fee (+ (*  monthly-fee number-of-months) registration-fee))
+;; (println "Total fee :"  total-fee)
 
+;;Functions in clojure ;; Nested functions
+(defn calculate-fee [monthly-fee number-of-months registration-fee]
+  (+ (*  monthly-fee number-of-months) registration-fee))
+;;Now suppose a student receives a 10% discount on the total tuition fee.
+(defn calculate-discount [Discount-percent  total-fee]
+  (/ (* Discount-percent  total-fee) 100))
+(defn final-fee [monthly-fee number-of-months registration-fee Discount-percent]
+   ( - (calculate-fee monthly-fee number-of-months registration-fee)
+    (calculate-discount Discount-percent (calculate-fee monthly-fee number-of-months registration-fee))))
+(final-fee 3000 8 500 10)
