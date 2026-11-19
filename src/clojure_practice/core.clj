@@ -167,7 +167,19 @@
     "Invalid payment amount"))
 
 (process-payment 3000)
-
-  
-         
+;;case in clojure 
+;; Use case to return:
+;; - "admin" → "Full Access"
+;; - "teacher" → "Teaching Access"
+;; - "student" → "Student Access"
+;; - Anything else → "Invalid Role"
+(defn student-role[role]
+  (case role
+    "admin" "Full Access"
+    "teacher" "Teaching Access"
+    "student" "Student Access"
+    "Invalid role"
+  ))
+(student-role "admin")
+(student-role "principal")
      
