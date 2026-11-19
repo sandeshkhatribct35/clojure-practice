@@ -96,3 +96,18 @@
   
 )
 (calculate-final-fee 3000 8 500 10)
+
+;; conditional statements in closure
+;; Write a function named check-result that:
+;; 1. Accepts marks as a parameter.
+;; 2. Checks whether marks are greater than or equal to 40.
+;; 3. Returns "Pass" if true.
+;; 4. Returns "Fail" otherwise.
+
+(defn check-result[marks]
+(if (> marks 40)
+ "Pass"
+ "Fail") )
+(check-result 20)
+(check-result 50)
+(check-result 90)
