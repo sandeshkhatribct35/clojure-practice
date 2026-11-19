@@ -148,3 +148,26 @@
 
 (notify-fee-due 100000)
 (notify-fee-due -50)
+
+;;do in clojure
+;; Create a function named process-payment:
+;; - Accept amount as a parameter.
+;; - If amount is greater than 0:
+;;   - Print "Payment received".
+;;   - Print "Updating student account".
+;;   - Return "Payment successful".
+;; - Otherwise, return "Invalid payment amount".
+
+(defn process-payment[amount]
+  (if  (> amount 0)
+    (do 
+      (println "Payment received")
+      (println "Updating student account")
+      "Payment successful")
+    "Invalid payment amount"))
+
+(process-payment 3000)
+
+  
+         
+     
