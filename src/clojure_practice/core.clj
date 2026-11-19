@@ -104,28 +104,47 @@
 ;; 3. Returns "Pass" if true.
 ;; 4. Returns "Fail" otherwise.
 
-(defn check-result[marks]
-(if (> marks 40)
- "Pass"
- "Fail") )
-(check-result 20)
-(check-result 50)
-(check-result 90)
+(defn check-pass-result [marks]
+  (if (>= marks 40)
+    "Pass"
+    "Fail"))
+(check-pass-result 20)
+(check-pass-result 50)
+(check-pass-result 90)
 ;; cond statement
 ;; Imagine your tuition management system needs three student statuses:
 ;; - Marks 80 or above → Excellent
 ;; - Marks 40–79 → Pass
 ;; - Marks below 40 → Fail
 
-(defn check-result[marks]
+(defn check-result [marks]
   (cond
     (>= marks 80) "Excellent"
-    (and (> marks 40)
-         (< marks  80) ) "Pass"
-   :else  "Fail"
-  ))
+    (>= marks 40) "Pass"
+    :else "Fail"))
 (check-result 50)
 (check-result 60)
 (check-result 90)
 (check-result 15)
 
+;;when in clojure
+;; Create a function:
+
+;; notify-fee-due
+
+;; Requirements:
+;; - Accept fee-due as a parameter.
+;; - If fee due is greater than 0, print "Payment is pending".
+;; - Also print "Please clear your dues.".
+;; - If fee due is 0, print nothing.
+
+
+(defn notify-fee-due [fee-due]
+  (when (> fee-due 0)
+    (println "Payment is pending")
+    (println "Please clear your dues"))
+  (when (= fee-due 0)
+    (println "Nothing to pay")))
+
+(notify-fee-due 100000)
+(notify-fee-due -50)
