@@ -111,3 +111,20 @@
 (check-result 20)
 (check-result 50)
 (check-result 90)
+;; cond statement
+;; Imagine your tuition management system needs three student statuses:
+;; - Marks 80 or above → Excellent
+;; - Marks 40–79 → Pass
+;; - Marks below 40 → Fail
+
+(defn check-result[marks]
+  (cond
+    (>= marks 80) "Excellent"
+    (and (> marks 40)
+         (< marks  80) ) "Pass"
+   :else  "Fail"
+  ))
+(check-result 50)
+(check-result 60)
+(check-result 90)
+(check-result 15)
