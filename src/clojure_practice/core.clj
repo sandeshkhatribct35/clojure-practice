@@ -252,5 +252,21 @@ student
 (get updated-student :fee)
 
 
+;;dissoc in clojure
+;; Using the same student map:
+;; 1. Remove :fee using dissoc.
+;; 2. Store the result in updated-student.
+;; 3. Display both the original and updated maps
+(def student
+  {:name "Sandesh"
+   :age 20
+   :course "BCT"
+   :monthly-fee 3000})
+(def updated-student 
+  (dissoc student :monthly-fee))
+student
+updated-student
+
+
 
 
