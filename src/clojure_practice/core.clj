@@ -236,6 +236,21 @@ student-rolls
 (assoc student :monthly-fee 3500)
 (assoc student :college "IOE")
 student
+;;Update in clojure
+;; Create updated-student using update to increase the fee by 1000.
+
+;; Then display:
+;; 1. Original fee.
+;; 2. Updated fee.
+(def student {
+   :fee 3000
+              })
+(get student :fee)
+(def updated-student
+  (update student :fee + 1000))
+
+(get updated-student :fee)
+
 
 
 
