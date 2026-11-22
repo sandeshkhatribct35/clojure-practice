@@ -24,6 +24,9 @@ Completed and practiced so far:
 - Reusing functions for discount calculations
 - Creating local bindings with `let`
 - Using `let` inside `defn`
+- Using `if`, `cond`, `when`, `do`, and `case`
+- Working with vectors and lists
+- Accessing collection values and adding values with `conj`
 
 Progress should be recorded in `DAILY_PROGRESS.md`.
 

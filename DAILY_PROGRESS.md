@@ -14,6 +14,11 @@
 - Reusing functions for discount calculations
 - Creating local bindings with `let`
 - Using `let` inside `defn`
+- Conditional statements: `if`, `cond`, `when`, `do`, and `case`
+- Creating vectors and lists
+- Reading collection values with `first`, `nth`, and `get`
+- Counting collections with `count`
+- Adding immutable values with `conj`
 
 ### Concepts Learned
 

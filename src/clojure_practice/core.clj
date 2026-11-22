@@ -182,4 +182,34 @@
   ))
 (student-role "admin")
 (student-role "principal")
-     
+
+;; list and vectors in clojure
+;; Create a vector named student-names containing Ram, Shyam, Hari and Sita.
+
+;; Then:
+;; 1. Display the first student.
+;; 2. Display the third student.
+;; 3. Count the students.
+;; 4. Add "Gita" using conj.
+;; 5. Display the original vector again.
+(def students [ "Ram" "Shyam" "Hari" "Sita"])
+(first students)
+(get students 2)
+(count students)
+(conj students "Gita")
+
+;; Exercise for lists
+;; Create a list named student-rolls containing 101, 102, 103 and 104.
+;; Then:
+;; 1. Display the first roll number.
+;; 2. Display the third roll number using nth.
+;; 3. Count the roll numbers.
+;; 4. Add 105 using conj.
+;; 5. Display the original list again.
+(def student-rolls '(101 102 103 104))
+(first student-rolls)
+(nth student-rolls 2)
+(count student-rolls)
+(conj student-rolls 105)
+student-rolls
+
