@@ -212,4 +212,30 @@
 (count student-rolls)
 (conj student-rolls 105)
 student-rolls
+;;Maps in clojure
+;; Create a map called student with:
+;; - Name: "Sandesh"
+;; - Age: 20
+;; - Course: "BCT"
+;; - Monthly fee: 3000
+;; Then write expressions to:
+;; 1. Display the student's name.
+;; 2. Display the monthly fee.
+;; 3. Change the monthly fee to 3500 using assoc.
+;; 4. Add a new key :college with value "IOE".
+;; 5. Display the original map again.
+(def student
+  {
+   :name "Sandesh"
+   :age 20
+   :course "BCT"
+   :monthly-fee 3000
+   })
+(:name student)
+(:monthly-fee student)
+(assoc student :monthly-fee 3500)
+(assoc student :college "IOE")
+student
+
+
 

@@ -19,6 +19,8 @@
 - Reading collection values with `first`, `nth`, and `get`
 - Counting collections with `count`
 - Adding immutable values with `conj`
+- Creating and reading maps
+- Updating maps immutably with `assoc`
 
 ### Concepts Learned
 

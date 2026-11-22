@@ -27,6 +27,8 @@ Completed and practiced so far:
 - Using `if`, `cond`, `when`, `do`, and `case`
 - Working with vectors and lists
 - Accessing collection values and adding values with `conj`
+- Working with maps and keyword lookup
+- Updating maps with `assoc`
 
 Progress should be recorded in `DAILY_PROGRESS.md`.
 
