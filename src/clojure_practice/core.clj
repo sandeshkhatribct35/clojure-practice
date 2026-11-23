@@ -289,6 +289,26 @@ student
 (def updated-student
   (assoc-in student [:payment-details :monthly-fee] 3500))
 updated-student
+;; sets in clojure
 
+;; Create a set named registered-students containing:
+;; #{101 102 103 104}
+
+
+;; Then write expressions to:
+;; 1. Add student ID 105.
+;; 2. Remove student ID 102.
+;; 3. Check whether student ID 103 exists.
+;; 4. Check whether student ID 110 exists.
+;; 5. Count the number of students in the original set.
+
+(def registered-students #{101 102 103 104})
+(conj registered-students 105)
+(disj registered-students 102)
+(contains? registered-students 103)
+(contains? registered-students 110)
+(count registered-students)
+
+  
 
 
