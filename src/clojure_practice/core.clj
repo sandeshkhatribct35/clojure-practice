@@ -321,6 +321,19 @@ updated-student
 (map inc marks)
 (map #(* % 2) marks)
 
+;;filter in clojure
+;; Imagine these are monthly tuition fees:
+;; (def fees [1500 2000 2500 3000 3500 4000 4500])
 
+
+;; Write expressions to:
+;; 1. Select fees greater than or equal to 3000 using filter and fn.
+;; 2. Select fees strictly less than 3000 using filter and short anonymous function syntax (#()).
+
+(def fees [1500 2000 2500 3000 3500 4000 4500])
+(filter (fn [x]
+          (>= x 3000))
+fees)
+(filter #(< % 3000) fees)
 
 
