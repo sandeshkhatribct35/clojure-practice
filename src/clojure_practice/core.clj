@@ -335,5 +335,20 @@ updated-student
           (>= x 3000))
 fees)
 (filter #(< % 3000) fees)
+;;reduce in clojure
+;; You are managing tuition payments:
+;; (def payments [3000 2500 4000 3500 2000])
 
+
+;; Write expressions to:
+;; 1. Calculate the total payments using reduce and +.
+;; 2. Calculate the total payments using reduce, fn, and an initial value of 0.
+;; 3. Calculate the highest payment using reduce and max.
+
+(def payments [3000 2500 4000 3500 2000])
+(reduce + payments)
+(reduce (fn [total payments]
+          (+ total payments))
+ 0  [3000 2500 4000 3500 2000])
+(reduce max payments)
 
