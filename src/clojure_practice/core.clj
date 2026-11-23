@@ -309,6 +309,18 @@ updated-student
 (contains? registered-students 110)
 (count registered-students)
 
-  
+;;collection operations in clojure
+;; Your exercise
+;; You have the following student marks:
+;; (def marks [20 35 40 50 60]) 
+;; Task: Use map and inc to increase every student's marks by 1.
+
+;; Then use map again to multiply every student's marks by 2.
+
+(def marks [20 35 40 50 60])
+(map inc marks)
+(map #(* % 2) marks)
+
+
 
 
