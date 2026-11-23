@@ -266,7 +266,29 @@ student
   (dissoc student :monthly-fee))
 student
 updated-student
-
+;;nested maps
+;; Create a nested map named student containing:
+;; - Name: Ram
+;; - Age: 20
+;; - Payment details:
+;;   - Monthly fee: 3000
+;;   - Status: Pending
+;; Then:
+;; 1. Display the student's age using get-in.
+;; 2. Display the monthly fee using get-in.
+;; 3. Change the monthly fee to 3500 using assoc-in.
+;; 4. Display the original and updated maps.
+(def student
+  {:name "Ram"
+   :age 20
+   :payment-details {:monthly-fee 3000
+                     :status "Pending"}})
+(get-in student [:age])
+(get-in student [:payment-details :monthly-fee])
+student
+(def updated-student
+  (assoc-in student [:payment-details :monthly-fee] 3500))
+updated-student
 
 
 
