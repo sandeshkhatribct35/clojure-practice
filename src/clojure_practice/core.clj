@@ -381,4 +381,13 @@ fees)
 
 (filter #(> (:fee %) 3000) students)
 
+;;do seq in closure
+;; Write a doseq expression that displays each student's name.
 
+;; Use:
+;; (def students ["Ram" "Shyam" "Hari" "Sita"])
+
+
+(def students ["Ram" "Shyam" "Hari" "Sita"])
+(doseq [student students]
+  (println student))
