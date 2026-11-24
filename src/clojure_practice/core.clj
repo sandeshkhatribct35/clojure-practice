@@ -413,3 +413,13 @@ fees)
       (recur (inc number)))
     "Finished"))
 
+;;Use loop and recur to calculate the sum of numbers from 1 to 5.
+(loop [number 1
+       total 0]
+  (if (<= number 5)
+    (recur (inc number)
+           (+ total number))
+    total))
+
+
+
