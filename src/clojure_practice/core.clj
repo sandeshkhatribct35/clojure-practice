@@ -391,3 +391,8 @@ fees)
 (def students ["Ram" "Shyam" "Hari" "Sita"])
 (doseq [student students]
   (println student))
+;;for in clojure
+;; Use for to create a sequence containing each student's fee increased by 500.
+(def fees [2000 3000 4000])
+(for [fee fees]
+  (+ fee 500))
