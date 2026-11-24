@@ -396,3 +396,20 @@ fees)
 (def fees [2000 3000 4000])
 (for [fee fees]
   (+ fee 500))
+
+;;loop and recur in clojure 
+;; Exercise 3 - loop and recur
+;; Write a loop that prints numbers from 1 to 5.
+
+;; Requirements:
+;; - Start with number equal to 1.
+;; - Continue while number is less than or equal to 5.
+;; - Increase the number by 1 using inc and recur.
+
+(loop [number 1]
+  (if (<= number 5)
+    (do
+      (println number)
+      (recur (inc number)))
+    "Finished"))
+
