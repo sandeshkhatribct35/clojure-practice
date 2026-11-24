@@ -351,4 +351,34 @@ fees)
           (+ total payments))
  0  [3000 2500 4000 3500 2000])
 (reduce max payments)
+;; Use this student data:
+;; (def students
+;;   [{:name "Ram" :fee 3000 :status "Paid"}
+;;    {:name "Shyam" :fee 2500 :status "Pending"}
+;;    {:name "Hari" :fee 4000 :status "Paid"}
+;;    {:name "Sita" :fee 3500 :status "Pending"}])
+
+
+;; Write these four expressions:
+;; 1. Use filter to find all students with "Pending" status.
+;; 2. Use map to extract the names of all students.
+;; 3. Use reduce to calculate the total fees.
+;; 4. Use filter to find students whose fee is greater than 3000.
+(def students
+  [{:name "Ram" :fee 3000 :status "Paid"}
+   {:name "Shyam" :fee 2500 :status "Pending"}
+   {:name "Hari" :fee 4000 :status "Paid"}
+   {:name "Sita" :fee 3500 :status "Pending"}])
+
+(filter #(= (:status %) "Pending") students)
+
+(map :name students)
+
+(reduce (fn [total student]
+          (+ total (:fee student)))
+  0
+  students)
+
+(filter #(> (:fee %) 3000) students)
+
 
