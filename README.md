@@ -62,6 +62,22 @@ With Calva in VS Code, use **Calva: Start a Project REPL and Connect** and selec
 - Develop clear, readable coding habits
 - Improve debugging and REPL workflow
 - Demonstrate consistent, documented learning progress
+- ## 2026-11-25 — Clojure Learning Progress
+
+### Topics studied
+- Nested maps and nested data access using `get-in` and `assoc-in`.
+- Sets and their operations: `conj`, `disj`, `contains?`, and `count`.
+- Collection operations: `map`, `filter`, and `reduce`.
+- Anonymous functions using `fn` and shorthand `#()`.
+- Iteration using `doseq` and `for`.
+- Repetition using `loop` and `recur`.
+- Practised calculating accumulated sums using loop variables.
+
+### Next learning goals
+- User input using `read-line`.
+- Number conversion and input validation.
+- Exception handling using `try` and `catch`.
+- File handling and preparation for the Tuition Management CLI.
 
 ## Repository Structure
 
