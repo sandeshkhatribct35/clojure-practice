@@ -77,7 +77,7 @@ With Calva in VS Code, use **Calva: Start a Project REPL and Connect** and selec
 - User input using `read-line`.
 - Number conversion and input validation.
 - Exception handling using `try` and `catch`.
-- File handling and preparation for the Tuition Management CLI.
+- File handling and preparation for the Tuition Management CLI....
 
 ## Repository Structure
 
