@@ -422,4 +422,24 @@ fees)
     total))
 
 
+;;read-line in clojure
+;; Create a small program that:
+;; 1. Asks the user to enter their name.
+;; 2. Reads and stores the name.
+;; 3. Asks the user to enter their monthly tuition fee.
+;; 4. Reads and converts the fee into a number.
+;; 5. Adds NPR 500 to the fee.
+;; 6. Displays the student's name and updated fee.
+(println "Enter your name:")
+(def user-name (read-line))
+
+(println "Enter your monthly tuition fee:")
+(def fee (parse-long (read-line)))
+
+(def updated-fee (+ fee 500))
+
+(println (str "Student: " user-name))
+(println (str "Updated fee: " updated-fee))
+
+
 
