@@ -29,6 +29,8 @@ Completed and practiced so far:
 - Accessing collection values and adding values with `conj`
 - Working with maps and keyword lookup
 - Updating maps with `assoc`
+- -readline in clojure
+- 
 
 Progress should be recorded in `DAILY_PROGRESS.md`.
 
@@ -79,6 +81,7 @@ With Calva in VS Code, use **Calva: Start a Project REPL and Connect** and selec
 - Exception handling using `try` and `catch`.
 - File handling and preparation for the Tuition Management CLI....
 
+connecting backend with project 
 ## Repository Structure
 
 ```text
