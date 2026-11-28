@@ -93,3 +93,4 @@ connecting backend with project
 ├── DAILY_PROGRESS.md
 └── README.md
 ```
+Difference of clojure from other prpgeamming language is that it needs a seaparate REPL environment and it follows prefix structure 
